@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple App Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .app-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .app-header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .app-content {
+            padding: 20px;
+        }
+
+        .app-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .app-item:last-child {
+            border-bottom: none;
+        }
+
+        .app-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .app-button:hover {
+            background-color: #218838;
+        }
+
+        .app-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .app-footer {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        .app-list{
+            list-style-type: none;
+            padding:0;
+            margin:0;
+        }
+        .app-list li{
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .app-list li:last-child{
+            border-bottom: none;
+        }
+
+        .app-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+
+        .app-grid-item {
+          padding: 15px;
+          background-color: #e9ecef;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+        .app-text-area {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          resize: vertical;
+        }
+
+        .app-image{
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 10px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-header">
+            <h1>WELCOME TO GK TEXTILES</h1>
+        </div>
+        <div class="app-content">
+            <input type="text" class="app-input" placeholder="Enter text">
+            <textarea class="app-text-area" placeholder="Enter multi-line text"></textarea>
+            <button class="app-button">Submit</button>
+            <div class="app-grid">
+                <div class="app-grid-item">
+                    <img src="shirt.jpg" alt="Men's Clothing" class="app-image">
+                    <p>Shirt</p>
+                </div>
+                <div class="app-grid-item">
+                    <img src="pant.jpg" alt="Women's Clothing" class="app-image">
+                    <p>Pant</p>
+                </div>
+                <div class="app-grid-item">
+                    <img src="shoes.jpg" alt="Kids Clothing" class="app-image">
+                    <p>Shoes</p>
+                </div>
+                <div class="app-grid-item">
+                    <img src="belt.jpg" alt="Footwear" class="app-image">
+                    <p>Belt</p>
+                </div>
+            </div>
+            
+            <img src="gk textile.jpg" alt="placeholder image" class="app-image">
+        </div>
+        <div class="app-footer">
+            &copy; 2025 GK TEXTILES App
+        </div>
+    </div>
+</body>
+</html>
